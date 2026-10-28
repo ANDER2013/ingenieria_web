@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitos funcionales | NetPlus</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+        <a class="marca" href="../index.html"><img src="../img/logo.jpeg" alt="Logo NetPlus"> Dashboard de Nómina</a>
+      <nav><ul class="menu"><li><a href="../index.html">Inicio</a></li><li><a href="decisiones.html">Decisiones</a></li><li><a href="tecnologia.html">Tecnología</a></li><li><a href="funcionales.html" class="activo">Funcionales</a></li><li><a href="nofuncionales.html">No funcionales</a></li><li><a href="pantallas.html">Pantallas</a></li><li><a href="datos.html">Datos</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="portada">
+      <span class="etiqueta">Sección 4 · Requerimientos funcionales</span>
+      <h1>Qué <span>debe hacer</span> el sistema</h1>
+      <p>Son 27 requerimientos: 20 conservan el identificador de la v2.0 y 7 son nuevos (RF-021 a RF-027). De ellos, 19 son Must Have y forman el MVP.</p>
+    </section>
+    <div class="tabla-caja">
+      <table>
+        <tr><th>ID</th><th>Nombre</th><th>Qué hace</th><th>Prioridad</th></tr>
+        <tr><td>RF-001</td><td>Carga de archivos</td><td>RRHH carga los Excel de marcaciones, permisos, horas extras, vacaciones y horarios, y el sistema los procesa.</td><td>Must</td></tr>
+        <tr><td>RF-002</td><td>Validación de estructura</td><td>Si faltan columnas obligatorias, detiene la carga e indica archivo, hoja y columna.</td><td>Must</td></tr>
+        <tr><td>RF-003</td><td>Dashboard diario</td><td>Muestra ausentes y atrasados de una fecha, con minutos de atraso y clasificación.</td><td>Must</td></tr>
+        <tr><td>RF-004</td><td>Exportación mensual</td><td>Exporta el consolidado a Excel y PDF con la estructura de nómina.</td><td>Must</td></tr>
+        <tr><td>RF-005</td><td>Headcount y rotación</td><td>Calcula headcount y rotación general y por área.</td><td>Should</td></tr>
+        <tr><td>RF-006</td><td>Control de roles</td><td>Restringe las vistas según el rol del usuario.</td><td>Must</td></tr>
+        <tr><td>RF-007</td><td>Recarga sin duplicados</td><td>Si se cargan fechas ya procesadas, reemplaza los datos previos.</td><td>Must</td></tr>
+        <tr><td>RF-008</td><td>Identificación de empleados</td><td>Identifica por cédula y enlaza con el ID de Z-BioTime; lista los IDs desconocidos.</td><td>Must</td></tr>
+        <tr><td>RF-009</td><td>Autenticación</td><td>Da acceso con credenciales válidas; tras 5 intentos fallidos bloquea la cuenta 15 min.</td><td>Must</td></tr>
+        <tr><td>RF-010</td><td>Horas extras del día</td><td>Muestra quiénes hicieron horas extras, con horas, tipo y estado.</td><td>Must</td></tr>
+        <tr><td>RF-011</td><td>Vacaciones y permisos</td><td>Muestra quiénes están de vacaciones, con permiso o cambio de turno (solo aprobadas).</td><td>Must</td></tr>
+        <tr><td>RF-012</td><td>Solicitudes pendientes</td><td>Las lista aparte; no suman a ningún total.</td><td>Should</td></tr>
+        <tr><td>RF-013</td><td>Filtros</td><td>Filtra por fecha, área, colaborador, tipo de novedad y estado.</td><td>Must</td></tr>
+        <tr><td>RF-014</td><td>Totales del día</td><td>Atrasos, ausencias, horas extras, vacaciones y permisos.</td><td>Must</td></tr>
+        <tr><td>RF-015</td><td>Resumen por colaborador</td><td>Horas trabajadas, extras por tipo, atrasos, ausencias, vacaciones y permisos de un corte.</td><td>Must</td></tr>
+        <tr><td>RF-016</td><td>Selección de corte</td><td>Toma del 21 del mes anterior al 20 del mes elegido.</td><td>Must</td></tr>
+        <tr><td>RF-017</td><td>Formato de exportación</td><td>Permite ajustar el orden y los nombres de las columnas exportadas.</td><td>Should</td></tr>
+        <tr><td>RF-018</td><td>Indicadores de asistencia</td><td>Tasa de atrasos, ausentismo y horas extras por área, con tendencia mensual.</td><td>Must</td></tr>
+        <tr><td>RF-019</td><td>Altas y bajas</td><td>Las guarda con fecha, área y motivo.</td><td>Should</td></tr>
+        <tr><td>RF-020</td><td>Permiso de carga</td><td>Solo RRHH puede cargar archivos.</td><td>Must</td></tr>
+        <tr><td>RF-021</td><td>Historial de cargas</td><td>Registra fecha, hora, usuario, archivos, registros procesados y errores.</td><td>Must</td></tr>
+        <tr><td>RF-022</td><td>Gestión de usuarios</td><td>DO crea, edita o desactiva usuarios y el cambio aplica de inmediato.</td><td>Must</td></tr>
+        <tr><td>RF-023</td><td>Configuración</td><td>DO edita corte, tolerancia, rangos de atraso y recargos sin tocar el código.</td><td>Must</td></tr>
+        <tr><td>RF-024</td><td>Novedades por revisar</td><td>Marcaciones sin solicitud aprobada se listan aparte y no suman horas extras.</td><td>Should</td></tr>
+        <tr><td>RF-025</td><td>Detalle por colaborador</td><td>Muestra marcaciones, turno y novedades del corte.</td><td>Should</td></tr>
+        <tr><td>RF-026</td><td>Indicadores a PDF</td><td>Exporta el panel de indicadores a PDF con gráficos y filtros activos.</td><td>Should</td></tr>
+        <tr><td>RF-027</td><td>Alertas por correo</td><td>Avisa por correo los atrasos y ausencias al cerrar la carga diaria.</td><td>Could</td></tr>
+      </table>
+    </div>
+  </main>
+  <footer class="pie">Ingeniería Web · Especificación DCAA Nettplus v3.0 · Lucas Jumbo y Francis Tapia · Docente: Diana Torres Guarnizo</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de datos | NetPlus</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+        <a class="marca" href="../index.html"><img src="../img/logo.jpeg" alt="Logo NetPlus"> Dashboard de Nómina</a>
+      <nav><ul class="menu"><li><a href="../index.html">Inicio</a></li><li><a href="decisiones.html">Decisiones</a></li><li><a href="tecnologia.html">Tecnología</a></li><li><a href="funcionales.html">Funcionales</a></li><li><a href="nofuncionales.html">No funcionales</a></li><li><a href="pantallas.html">Pantallas</a></li><li><a href="datos.html" class="activo">Datos</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="portada">
+      <span class="etiqueta">Sección 7 · Modelo de datos</span>
+      <h1>Nueve tablas <span>bastan para el MVP</span></h1>
+      <p>Toda tabla de hechos guarda la carga que la originó. Eso permite reemplazar por fecha sin duplicar (RF-007) y auditar (RF-021).</p>
+    </section>
+    <div class="tabla-caja">
+      <table>
+        <tr><th>Tabla</th><th>Campos principales</th><th>Relación</th></tr>
+        <tr><td>usuario</td><td>id, nombre, correo, hash de contraseña, rol, activo</td><td>Registra las cargas</td></tr>
+        <tr><td>area</td><td>id, nombre</td><td>Agrupa empleados</td></tr>
+        <tr><td>empleado</td><td>id, cédula (única), id_zbiotime, nombre, área, líder, fecha de ingreso, fecha de salida, activo</td><td>Pertenece a un área</td></tr>
+        <tr><td>horario</td><td>id, empleado, fecha, hora de entrada, hora de salida, tipo (fijo o turno)</td><td>Un registro por empleado y día</td></tr>
+        <tr><td>marcacion</td><td>id, empleado, fecha y hora, tipo (entrada o salida), forma (rostro, huella, móvil), carga</td><td>Referencia a la carga</td></tr>
+        <tr><td>solicitud</td><td>id, empleado, tipo, fecha desde, fecha hasta, motivo, estado (aprobado, pendiente, rechazado), carga</td><td>Referencia a la carga</td></tr>
+        <tr><td>carga</td><td>id, usuario, fecha y hora, archivos, registros procesados, errores, estado</td><td>Origen de los datos</td></tr>
+        <tr><td>movimiento_personal</td><td>id, empleado, tipo (alta o baja), fecha, área, motivo</td><td>Alimenta headcount y rotación</td></tr>
+        <tr><td>configuracion</td><td>clave, valor (corte, tolerancia, rangos, recargos, columnas de exportación)</td><td>Lo lee el motor de cálculo</td></tr>
+      </table>
+    </div>
+  </main>
+  <footer class="pie">Ingeniería Web · Especificación DCAA Nettplus v3.0 · Lucas Jumbo y Francis Tapia · Docente: Diana Torres Guarnizo</footer>
+</body>
+</html>

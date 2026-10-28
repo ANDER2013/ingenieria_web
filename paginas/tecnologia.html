@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología | NetPlus</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="marca" href="../index.html"><img src="../img/logo.jpeg" alt="Logo NetPlus"> Dashboard de Nómina</a>
+      <nav><ul class="menu"><li><a href="../index.html">Inicio</a></li><li><a href="decisiones.html">Decisiones</a></li><li><a href="tecnologia.html" class="activo">Tecnología</a></li><li><a href="funcionales.html">Funcionales</a></li><li><a href="nofuncionales.html">No funcionales</a></li><li><a href="pantallas.html">Pantallas</a></li><li><a href="datos.html">Datos</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="portada">
+      <span class="etiqueta">Sección 2 · Tecnología y arquitectura</span>
+      <h1>Herramientas <span>gratuitas y mantenibles</span></h1>
+      <p>El stack es de uso común en la UTPL y fácil de mantener por un equipo pequeño. La ingesta queda separada para cambiar la carga de Excel por una API de Z-BioTime en el futuro.</p>
+    </section>
+    <div class="tabla-caja">
+      <table>
+        <tr><th>Capa</th><th>Tecnología</th><th>Para qué se usa</th></tr>
+        <tr><td>Frontend</td><td>React 18 + Vite + TypeScript</td><td>Aplicación web de una sola página</td></tr>
+        <tr><td>Estilos</td><td>Tailwind CSS con tokens de marca</td><td>Paleta, tipografía y logo reemplazables</td></tr>
+        <tr><td>Gráficos</td><td>Recharts</td><td>Indicadores de asistencia, headcount y rotación</td></tr>
+        <tr><td>Backend</td><td>Python 3.12 + FastAPI</td><td>API REST y reglas de negocio</td></tr>
+        <tr><td>Procesamiento de Excel</td><td>pandas + openpyxl</td><td>Lee los reportes de Z-BioTime y exporta .xlsx</td></tr>
+        <tr><td>Exportación a PDF</td><td>ReportLab</td><td>Resumen de nómina y panel de indicadores</td></tr>
+        <tr><td>Base de datos</td><td>PostgreSQL 16 (SQLite en local)</td><td>Empleados, horarios, marcaciones, solicitudes, cargas y usuarios</td></tr>
+        <tr><td>Acceso a datos</td><td>SQLAlchemy + Alembic</td><td>Modelos y migraciones versionadas</td></tr>
+        <tr><td>Autenticación</td><td>JWT en cookie HttpOnly + Argon2</td><td>Sesión por rol y contraseñas cifradas</td></tr>
+        <tr><td>Pruebas</td><td>pytest, Postman y Playwright</td><td>Reglas de negocio, API y recorrido de pantallas</td></tr>
+        <tr><td>Despliegue</td><td>Docker Compose + Nginx con HTTPS</td><td>Un servidor único, solo por HTTPS</td></tr>
+        <tr><td>Diseño y modelado</td><td>Figma y Enterprise Architect</td><td>Prototipo, casos de uso y UML</td></tr>
+        <tr><td>Control de versiones</td><td>Git y GitHub</td><td>Ramas por funcionalidad</td></tr>
+      </table>
+    </div>
+    <div class="rejilla">
+      <article class="tarjeta"><h3>Bloque 1 · Ingesta</h3><p>RRHH sube los Excel de Z-BioTime. Es la única puerta de entrada de datos (RES-001).</p></article>
+      <article class="tarjeta"><h3>Bloque 2 · Reglas</h3><p>El servidor aplica corte 21-20, turnos y solicitudes aprobadas.</p></article>
+      <article class="tarjeta"><h3>Bloque 3 · Paneles</h3><p>Cada pantalla solo muestra lo que el motor ya calculó; el navegador no recalcula nada.</p></article>
+    </div>
+  </main>
+  <footer class="pie">Ingeniería Web · Especificación DCAA Nettplus v3.0 · Lucas Jumbo y Francis Tapia · Docente: Diana Torres Guarnizo</footer>
+</body>
+</html>

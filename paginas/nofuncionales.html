@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitos no funcionales | NetPlus</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="marca" href="../index.html"><img src="../img/logo.jpeg" alt="Logo NetPlus"> Dashboard de Nómina</a>
+      <nav><ul class="menu"><li><a href="../index.html">Inicio</a></li><li><a href="decisiones.html">Decisiones</a></li><li><a href="tecnologia.html">Tecnología</a></li><li><a href="funcionales.html">Funcionales</a></li><li><a href="nofuncionales.html" class="activo">No funcionales</a></li><li><a href="pantallas.html">Pantallas</a></li><li><a href="datos.html">Datos</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="portada">
+      <span class="etiqueta">Sección 5 · Requerimientos no funcionales</span>
+      <h1>Qué tan <span>bien</span> debe hacerlo</h1>
+      <p>Son 14 requerimientos, cada uno con una medida que se puede comprobar. Los nuevos son RNF-010 a RNF-014.</p>
+    </section>
+    <div class="tabla-caja">
+      <table>
+        <tr><th>ID</th><th>Categoría</th><th>Medida de aceptación</th><th>Prioridad</th></tr>
+        <tr><td>RNF-001</td><td>Rendimiento</td><td>Procesar 100 colaboradores en menos de 1 minuto (Excel de 5 MB, menos de 60 s).</td><td>Must</td></tr>
+        <tr><td>RNF-002</td><td>Seguridad</td><td>Contraseñas con hash Argon2; ninguna en texto plano.</td><td>Must</td></tr>
+        <tr><td>RNF-003</td><td>Usabilidad</td><td>Identidad visual de Nettplus con tokens; cambiar paleta o logo en un solo archivo.</td><td>Must</td></tr>
+        <tr><td>RNF-004</td><td>Seguridad</td><td>Solo HTTPS; cada rol ve únicamente sus vistas.</td><td>Must</td></tr>
+        <tr><td>RNF-005</td><td>Usabilidad</td><td>Cargar un reporte y ver el resumen diario en 3 clics o menos.</td><td>Should</td></tr>
+        <tr><td>RNF-006</td><td>Compatibilidad</td><td>Funciona en las últimas versiones de Chrome, Edge y Firefox de escritorio.</td><td>Must</td></tr>
+        <tr><td>RNF-007</td><td>Compatibilidad</td><td>Acepta los .xlsx de Z-BioTime sin conversión manual.</td><td>Must</td></tr>
+        <tr><td>RNF-008</td><td>Confiabilidad</td><td>Conserva cortes anteriores; una carga con error no altera datos guardados.</td><td>Must</td></tr>
+        <tr><td>RNF-009</td><td>Mantenibilidad</td><td>Estructura modular y parámetros en configuración.</td><td>Should</td></tr>
+        <tr><td>RNF-010</td><td>Rendimiento</td><td>95 % de las consultas del dashboard en menos de 2 s.</td><td>Should</td></tr>
+        <tr><td>RNF-011</td><td>Disponibilidad</td><td>99 % de lunes a viernes, de 07:00 a 19:00.</td><td>Should</td></tr>
+        <tr><td>RNF-012</td><td>Respaldo</td><td>Respaldo diario de la base y conservación de los últimos 30.</td><td>Should</td></tr>
+        <tr><td>RNF-013</td><td>Privacidad</td><td>Cumple la Ley Orgánica de Protección de Datos Personales de Ecuador; auditoría de accesos.</td><td>Must</td></tr>
+        <tr><td>RNF-014</td><td>Accesibilidad y diseño</td><td>Contraste mínimo AA (4.5:1) y sin desplazamiento horizontal desde 1366 px.</td><td>Should</td></tr>
+      </table>
+    </div>
+  </main>
+  <footer class="pie">Ingeniería Web · Especificación DCAA Nettplus v3.0 · Lucas Jumbo y Francis Tapia · Docente: Diana Torres Guarnizo</footer>
+</body>
+</html>

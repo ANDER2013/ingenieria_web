@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decisiones | NetPlus</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <div class="contenedor barra">
+        <a class="marca" href="../index.html"><img src="../img/logo.jpeg" alt="Logo NetPlus"> Dashboard de Nómina</a>
+      <nav><ul class="menu"><li><a href="../index.html">Inicio</a></li><li><a href="decisiones.html" class="activo">Decisiones</a></li><li><a href="tecnologia.html">Tecnología</a></li><li><a href="funcionales.html">Funcionales</a></li><li><a href="nofuncionales.html">No funcionales</a></li><li><a href="pantallas.html">Pantallas</a></li><li><a href="datos.html">Datos</a></li></ul></nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section class="portada">
+      <span class="etiqueta">Sección 1 · Decisiones de cierre</span>
+      <h1>Puntos pendientes, <span>ya resueltos</span></h1>
+      <p>Cada punto abierto de la v2.0 quedó con un valor por defecto. Todos son parámetros de configuración (RNF-009), así que cambiarlos no exige reprogramar.</p>
+    </section>
+    <div class="tabla-caja">
+      <table>
+        <tr><th>#</th><th>Punto</th><th>Decisión por defecto</th><th>Estado</th></tr>
+        <tr><td>1</td><td>Formato de nómina</td><td>Exportación estándar por colaborador; columnas reordenables (RF-017).</td><td>A confirmar con Contabilidad</td></tr>
+        <tr><td>2</td><td>Colores y logo</td><td>Paleta provisional con variables CSS hasta recibir el manual de marca.</td><td>A confirmar con Nettplus</td></tr>
+        <tr><td>3</td><td>Tolerancia de atraso</td><td>5 min de gracia. Leve 6–15 min, moderado 16–30 min, grave más de 30 min. Configurable.</td><td>A confirmar con DO</td></tr>
+        <tr><td>4</td><td>Hora de almuerzo</td><td>No se controla ni se descuenta en el MVP porque el reporte no la trae.</td><td>Cerrado</td></tr>
+        <tr><td>5</td><td>Horas extras</td><td>Se cuenta el menor valor entre lo aprobado y lo marcado. Recargo: suplementaria 50 %, extraordinaria 100 %.</td><td>A validar con Contabilidad</td></tr>
+        <tr><td>6</td><td>Justificaciones tardías</td><td>Recarga ilimitada en el día; cada carga reemplaza los datos de sus fechas (RF-007).</td><td>Cerrado</td></tr>
+        <tr><td>7</td><td>Identificador único</td><td>La cédula es la llave; el ID de Z-BioTime es código de enlace.</td><td>A confirmar</td></tr>
+        <tr><td>8</td><td>Altas y bajas</td><td>DO las registra en un formulario o con un Excel histórico.</td><td>Cerrado</td></tr>
+        <tr><td>9</td><td>Vacaciones</td><td>Se leen de permisos y ausencias con tipo «Vacaciones» y estado Aprobado.</td><td>A confirmar con muestras</td></tr>
+        <tr><td>10</td><td>Alertas por correo</td><td>Fuera del MVP; solo consulta en pantalla (Could Have).</td><td>Cerrado</td></tr>
+        <tr><td>11</td><td>Indicadores adicionales</td><td>Ausentismo, atrasos y horas extras por área.</td><td>Cerrado</td></tr>
+        <tr><td>12</td><td>Usuarios de gerencia</td><td>Sin usuario: DO exporta el panel de indicadores a PDF.</td><td>Cerrado</td></tr>
+        <tr><td>13</td><td>Muestras de archivos</td><td>El prototipo usa datos ficticios hasta recibir los Excel anonimizados.</td><td>Pendiente de Nettplus</td></tr>
+        <tr><td>14</td><td>Stack de desarrollo</td><td>Definido en la sección Tecnología.</td><td>A confirmar con docentes</td></tr>
+      </table>
+    </div>
+    <p class="aviso">DO consulta todo y administra usuarios y configuración, pero no carga archivos. Se mantienen tres roles (RES-004): no hay un cuarto rol administrador.</p>
+  </main>
+  <footer class="pie">Ingeniería Web · Especificación DCAA Nettplus v3.0 · Lucas Jumbo y Francis Tapia · Docente: Diana Torres Guarnizo</footer>
+</body>
+</html>
